@@ -1,0 +1,18 @@
+
+
+select * from dbo.Employees
+
+insert into dbo.Employees
+values(9,'sumit','','IT',73000,'2025-08-09')
+
+insert into dbo.Employees
+values(10,'nitin','shamani','0',54000,'2025-08-09')
+
+select * from dbo.Employees
+where department=NULL
+
+select * from dbo.Employees
+where department is NULL
+
+select *from dbo.Employees
+where department is not null
