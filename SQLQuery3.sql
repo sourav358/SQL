@@ -1,18 +1,13 @@
 
 
+select * from Employees
 
-select * from [dbo].[Employees]
-order by salary
+select firstname  from Employees
 
-select * from [dbo].[Employees]
-order by salary desc
+select firstname,Salary  from Employees
 
-select * from [dbo].[Employees]
-order by firstname asc, salary desc
+select firstname,LastName  from Employees
 
-select * from [dbo].[Employees]
-order by department asc, salary desc
+select EmployeeID, concat(firstname,' ', lastname) from Employees
 
-
-select * from [dbo].[Employees]
-order by firstname , salary desc
+select EmployeeID, concat(firstname,' ', lastname) as [Full Name] from Employees

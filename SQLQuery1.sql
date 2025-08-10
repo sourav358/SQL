@@ -2,28 +2,24 @@
 
 
 
-Create database employee_details
+use [Sales Databse]
 
-use employee_details
+--Creating Table1 & insertinting records in Table1
+create table table1 (C1 int, C2 nvarchar(max))
+insert into table1 values (1,'A'),
+(1,'B'),
+(2,'C'),
+(NULL,'D'),
+(3,'E'),
+(7,'DA')
+
+--Creating Table2 & insertinting records in Table2
+create table table2 (C1 int, C3 nvarchar(max))
+insert into table2 values (1,'XA'),
+(2,'MB'),
+(2,'NX'),
+(NULL,'MO'),
+(4,'XY'),
+(5,'TF')
 
 
-
-
-CREATE TABLE Employees (
-    EmployeeID INT PRIMARY KEY,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    Department VARCHAR(50),
-    Salary DECIMAL(10, 2),
-    HireDate DATE
-);
-
-
-
-INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary, HireDate)
-VALUES
-(1, 'John', 'Doe', 'HR', 50000.00, '2020-01-15'),
-(2, 'Jane', 'Smith', 'Finance', 60000.00, '2019-03-23'),
-(3, 'Alice', 'Johnson', 'IT', 75000.00, '2021-07-10'),
-(4, 'Bob', 'Brown', 'Marketing', 55000.00, '2018-09-30'),
-(5, 'Charlie', 'Davis', 'IT', 70000.00, '2022-02-20');
